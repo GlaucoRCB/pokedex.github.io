@@ -9,7 +9,7 @@
 
 body {
     text-align: center;
-    background-image: url(images/1243956.jpg);
+    background-image: url(/images/1243956.jpg);
     background-size: cover;
     min-height: 100vh;
 }
