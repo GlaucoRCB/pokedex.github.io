@@ -64,7 +64,7 @@ main {
 }
 
 .pokemon_details h3 {
-    margin-top: 15px;
+    margin-top: 13px;
     font-size: clamp(12px, 3.5vw, 30px);
 }
 
