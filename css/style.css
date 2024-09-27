@@ -65,7 +65,7 @@ main {
 
 .pokemon_details h3 {
     margin-top: 15px;
-    font-size: clamp(12px, 1.8vw, 20px); 
+    font-size: clamp(12px, 3.5vw, 30px);
 }
 
 .form {
