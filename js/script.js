@@ -32,7 +32,12 @@ const renderPokemon = async (pokemon) => {
         pokemonType.innerHTML = `Types: ${types}`;
         pokemonHeight.innerHTML = `Height: ${data.height / 10} M`;
         pokemonWeight.innerHTML = `Weight: ${data.weight / 10} KG`;
-        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+                if (data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] == null) {
+            pokemonImage.src = data['sprites']['front_default'];
+        }
+        else {
+            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        }
         input.value = '';
         searchPokemon = data.id;
     }
